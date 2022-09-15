@@ -1,0 +1,31 @@
+<!-- p.220 코드7-1 -->
+<!-- 수평, 중앙, One True 정렬 레이아웃 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Float With Overflow</title>
+    <style>
+        div.container {
+            overflow: hidden;
+            /* 이걸 안써주면 수평정렬한 요소의 옆으로 글이 들어가게됨 */
+        }
+
+        div.item {
+            float: left;
+            margin: 0 3px;
+            padding: 10px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    <div class="container">
+        <div class="item">메뉴 - 1</div>
+        <div class="item">메뉴 - 2</div>
+        <div class="item">메뉴 - 3</div>
+        <div class="item">메뉴 - 4</div>
+    </div>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+</body>
+</html>

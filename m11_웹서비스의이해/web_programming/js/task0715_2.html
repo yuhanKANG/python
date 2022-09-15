@@ -1,0 +1,31 @@
+<!-- class 속성으로 여러 문서객체를 선택하는 사례를 작성하세요. -->
+<!-- document.getElementsByClassName 사용 -->
+<!-- select~로 시작하는 파일들 참조 p.335~344-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>7월15일 2번과제</title>
+    <script>
+        //이벤트 연결
+        window.onload =function() {
+            // 문서 객체 선택
+            var myName  = document.getElementsByClassName('myName') ;
+
+            for (var i = 0; i < myNames.length; i++) {
+                //변수선언
+                var someName = myName[i];
+                // 문서 객체 조작
+                myName.style.color = 'blue';
+                myName.style.background = 'wheat';
+                myName.innerHTML = '과제하니?'
+            }
+        };
+    </script>
+    
+</head>
+<body>
+    <h1 class = 'myName'>테스트</h1>
+    <h1 class = 'myName'>테스트</h1>
+    <h1 class = 'myName'>테스트</h1>
+</body>
+</html>

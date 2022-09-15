@@ -1,0 +1,34 @@
+<!-- 함수를 이용해 속성을 지정하는 사례를 작성해서 출력하세요 -->
+<!-- p.377 참조 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>jQuery Basic</title>
+    <!-- p.377 문서 객체 속성 조작 코드11-6 -->
+    <!-- 함수를 입력해 속성 지정하기 -->
+    <script src = "https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script>
+        // 이벤트 연결
+        $(document).ready(function () {
+            // 속성 지정
+            $('img').attr({
+                alt: 'jQuery 라이브러리를 사용한 속성 지정',
+                src: function (index) {
+                    // 변수 선언(함수 사용)
+                    var size = (index +1) * 100;
+
+                    // 반환
+                    return 'https://via.placeholder.com/' + size + 'x100';
+                }
+            
+            });
+        
+        });
+    </script>
+</head>
+<body>
+    <img>
+    <img>
+    <img>
+</body>
+</html>

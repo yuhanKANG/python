@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>jQuery Basic</title>
+    <!-- p.382 코드11-12 -->
+    <!-- html 메서드로 내부 글자 조작하기 -->
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script>
+        $(document).ready(function () {
+            // 변수 선언
+            var text = $('h1').text();
+            var html = $('h1').html();
+
+            // 출력
+            alert("text: " + text);
+            alert("html: " + html);
+        });
+    </script>
+</head>
+<body>
+    <h1>집갈때 비내리면 안돼</h1>
+    <h1>구름아 버텨줘~~</h1>
+</body>
+</html>

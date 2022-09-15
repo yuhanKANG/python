@@ -1,0 +1,22 @@
+<!-- 고전 이벤트를 사용한 사례를 작성하세요. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>p.358 코드10-16참조</title>
+    <script>
+        // 이벤트 연결
+        window.onload = function() {
+            // 문서 객체 선택
+            var button = document.getElementById('button');
+            
+            // 이벤트 연결
+            button.onclick = function() {
+                alert('회원가입이 완료되었습니다. 환영합니다!');
+            };
+        };
+    </script>
+</head>
+<body>
+    <button id="button">완료</button>
+</body>
+</html>

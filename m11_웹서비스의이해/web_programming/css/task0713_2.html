@@ -1,0 +1,45 @@
+<!-- 교재에 있는거 해보고 사례 만들기 -->
+<!-- 유동속성, 그림자(글자, 박스, 중첩 다 해보기), 그레이디언트 속성 사례를 작성하여
+    그 효과를 설명하세요. (p.205~211)-->
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <title>7월13일 과제2</title>
+        <style>
+            /* 유동속성 - float */
+            /* 이미지를 글자 위에 띄움 */
+            img {
+                float: left;
+            }
+
+            div {
+                border: 3px solid black;
+
+                /* -shadow : 오른쪽 아래 흐림도 색상 */
+                /* 박스 빨간 그림자 */
+                box-shadow: 10px 10px 10px rgb(165, 49, 49);
+                /* 텍스트 검정 그림자 */
+                text-shadow: 5px 5px 5px black;
+                /* 텍스트 가운데정렬 */
+                text-align: center;
+                
+                
+                /* 그레이디언트 생성 */
+                /* http://www.colorzilla.com/gradient-editor/ 에서 가져옴 */
+                background: rgb(30,87,153); /* Old browsers */
+                background: -moz-linear-gradient(top, rgba(30,87,153,1) 0%, rgba(41,137,216,1) 50%, rgba(32,124,202,1) 51%, rgba(125,185,232,1) 100%); /* FF3.6-15 */
+                background: -webkit-linear-gradient(top, rgba(30,87,153,1) 0%,rgba(41,137,216,1) 50%,rgba(32,124,202,1) 51%,rgba(125,185,232,1) 100%); /* Chrome10-25,Safari5.1-6 */
+                background: linear-gradient(to bottom, rgba(30,87,153,1) 0%,rgba(41,137,216,1) 50%,rgba(32,124,202,1) 51%,rgba(125,185,232,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#7db9e8',GradientType=0 );
+            }
+        </style>
+    </head>
+    <body>
+        <img src = 'hanbit.jpg'>
+        <div class="box">
+            <h1>한빛 아카데미 사진자료</h1>
+        </div><hr><hr>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+        </p>
+    </body>
+    </html>

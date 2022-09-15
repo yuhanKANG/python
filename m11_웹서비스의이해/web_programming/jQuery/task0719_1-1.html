@@ -1,0 +1,37 @@
+<!-- 문서객체 추가하기 8개 사례(p.419)를 작성하여 출력-->
+<!-- p.419~422 코드12-5,6. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>jQuery DOM</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script>
+        // 이벤트 연결
+        $(document).ready(function () {
+            // 10회 반복
+            for (var i = 0; i < 10; i++) {
+                // 문서 객체 생성
+                $('<h1>Create Document Object + ' + i + '</h1>').css({
+                    backgroundColor: 'black',
+                    color: 'yellow'
+                    // 대상(body)을 기준으로 앞쪽에 쭈르륵 붙음
+                }).prependTo('body');
+
+                // }).insertBefore('body');
+                // 대상을 기준으로 위로 쭉 붙음
+            }
+        });
+    </script>
+    <!-- p.419 표 12-2 변경 -->
+<!-- $(객체).prependTo(대상) : 객체를 대상의 앞부분에 추가. 대상과 가까운쪽에서 시작9~0
+     $(객체).appendTo(대상) : 객체를 대상의 뒷부분에 추가. 대상과 가까운쪽에서 시작0~9
+     $(객체).insertBefore(대상) : 객체를 대상의 앞쪽에 추가. 대상과 먼쪽에서 시작0~9
+     $(객체).insertAfter(대상) : 객체를 대상의 뒤쪽에 추가. 대상과 먼쪽에서 시작9~0 -->
+</head>
+<body>
+    <hr><hr><hr><hr><hr>
+    <hr><hr><hr><hr><hr>
+    <hr><hr><hr><hr><hr>
+    <h1> 도레미</h1>
+</body>
+</html>

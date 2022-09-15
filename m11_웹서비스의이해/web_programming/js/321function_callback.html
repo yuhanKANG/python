@@ -1,0 +1,24 @@
+<!-- p.321 코드9-26 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>콜백 함수</title>
+    <script>
+        function callTenTimes(callback) {
+            // 10회 반복
+            for ( var i = 0; i < 10; i++) {
+                callback(); //매개로 전달된 함수 호출
+            }
+        }
+    
+        //변수선언
+        var callback = function () {
+            alert('함수 호출')
+        };
+        callTenTimes(callback);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

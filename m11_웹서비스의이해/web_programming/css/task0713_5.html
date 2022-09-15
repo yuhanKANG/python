@@ -1,0 +1,28 @@
+<!-- @media 규칙과 media 속성(249)을 활용한 미디어 쿼리를 사용한 사례를 수행하세요.(p.245~257) -->
+<!-- 지원하는 미디어타입 p.252 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>7월13일 과제5</title>
+    
+    <!-- 미디어 속성 -->
+    <link rel="stylesheet" href="Style.css">
+
+    <style>
+        /* 영상을 대체할 수 없어 이미지로 코드를 넣어두었습니다 */
+        /* 미디어 쿼리(screen, print) */
+        @media screen {
+            body {background-image: url(hanbit.jpg);
+            background-size: cover;}
+        }
+        @media print {
+            body {background-color: black;}
+        }
+    </style>
+</head>
+<body>
+    <h1>넷플릭스는 스크린에 대한 자체 보안이 내장되어 있어 보던 화면을 printscreen으로 스크린샷 찍으면 화면이 검게 찍힌다.</h1>
+    <br>
+    <p>넷플릭스의 미디어 쿼리 사용 : 화면은 까맣고 css적용된것만 출력되는 것을 볼 수 있다.</p>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>jQuery Basic</title>
+    <!-- p.376 문서 객체 속성 조작 코드11-5 -->
+    <!-- 객체를 입력해 속성 지정하기 -->
+    <script src = "https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script>
+        // 이벤트 연결
+        $(document).ready(function () {
+            // 속성 지정
+            $('img').attr({
+                alt: 'jQuery 라이브러리를 사용한 속성 지정',
+                src: 'https://via.placeholder.com/100x100',
+                width: 100
+            });
+        
+        });
+    </script>
+</head>
+<body>
+    <img>
+    <img>
+    <img>
+</body>
+</html>

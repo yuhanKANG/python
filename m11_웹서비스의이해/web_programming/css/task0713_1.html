@@ -1,0 +1,59 @@
+<!-- 위치 속성 공식의 사례를 만들어서 문제를 단계별로 해결하고 설명하세요. 192~196p~200 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- p.199 코드6-40 참조 -->
+    <!-- z-index 숫자가 클수록 앞에 위치-->
+    <title>독일 국기</title>
+    <style>
+        .box {
+            width: 360px; height: 240px;
+            position: absolute;
+        }
+        /* 너비가 같고 높이가 다른 박스 3개 생성 */
+        /* 박스 전부 겹칠 것이기 때문에 absolute사용 */
+        .box2 {
+            width: 360px; height: 160px;
+            position: absolute;
+        }
+        .box3 {
+            width: 360px; height: 80px;
+            position: absolute;
+        }
+        /* 박스 3개 생성, 위치는 동일하게 맞춰줌 */
+        /* z-index로 노란색이 제일 아래 깔리도록 가장 작은수 부여 */
+        /* 클래스가 다르다고 child번호 같게 부여하면 하나빼고 생성이 안됨 */
+        .box:nth-child(1) {
+            background-color: yellow;
+        left: 50px; top: 50px;
+    z-index: 1;}
+    /* 픽셀도 같은위치로 배치시켜서 겹칠 수 있도록 설정 */
+        .box2:nth-child(2) {
+            background-color: red;
+        left:50px; top: 50px;
+    z-index: 10;}
+        .box3:nth-child(3) {
+            background-color: black;
+        left:50px; top:50px;
+    z-index: 100;}
+            /* 스크롤 작동시키기 위해 박스는 작게 설정 */
+
+        /* 자손의 position속성에 absolute 적용하기 위해 부모에 height속성 입력 */
+        body > div {
+            width: 400px; height: 200px;
+            border: 3px solid black;
+            position: relative;
+            overflow: scroll;
+        }
+    </style>
+</head>
+<body>
+    <h2>독일 국기는 검정, 빨강, 노랑으로 구성되어있다. 짱구처럼</h2>
+    <div>
+        <div class="box"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+    </div>
+    <h2>당신은 이제 독일 국기를 볼 때마다 짱구가 생각납니다.</h2>
+</body>
+</html>

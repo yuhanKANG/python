@@ -1,0 +1,35 @@
+<!-- p.383 코드11-13 -->
+<!-- 클래스 조작 -->
+<!-- addClass() 클래스 추가, removeClass() 제거, toggleClass() 전환 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>jQuery Basic</title>
+    <style>
+        #box {
+            width: 100px; height: 100px;
+            background-color: red;
+        }
+
+        #box.hover {
+            background-color: blue;
+            border-radius: 50px;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#box').hover(function () {
+                // 스타일 변경
+                $('#box').addClass('hover');
+            }, function () {
+                // 스타일 변경
+                $('#box').removeClass('hover');
+            });
+        });
+    </script>
+</head>
+<body>
+    <div id="box"></div>
+</body>
+</html>

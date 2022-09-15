@@ -1,0 +1,37 @@
+<!-- event 연결을 두가지 방법으로 수행하여 작성 및 결과 출력 p.388~390 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- 메서드 체이닝을 사용해 문서객체에 이밴트 여러개 적용하기 -->
+    <!-- 메서드가 객체를 반환하게 되면, 메서드의 반환 값인 객체를 통해
+         또 다른 함수를 호출하는 것.  -->
+    <title>jqEvent_Object</title>
+    <script src = "https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script>
+        $(document).ready(function () {
+            //스타일 변경 및 이벤트 연결
+            $('#box').css({
+                width: 100,
+                height: 100,
+                background: 'orange'
+                // 디폴트 오렌지
+
+                // 클릭하면 빨강
+            }).on({
+                click : function () {
+                    $(this).css('background', 'red');
+                },
+                mouseenter : function () {
+                    $(this).css('background', 'blue');
+                },
+                mouseleave : function () {
+                    $(this).css('background', 'green');
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+    <div id="box"></div>
+</body>
+</html>

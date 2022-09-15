@@ -1,0 +1,23 @@
+<!-- 객체 속성의 자료형을 여러가지로 하고 특히 함수도 포함한 사례를 작성하세요.(p.326)-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>속성과 메서드</title>
+    <script>
+        var failed = {
+            name : '강유한',
+            retry : function (retest) {
+                // failed 안에 있는 name을 사용하기때문에 this 표기
+                console.log(this.name+'은 ' + retest + '입니다. 공부하세요');
+            }
+        };
+
+        //메서드 호출하기
+        failed.retry('재시험');
+        
+    </script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!-- 260~266p 코드 4개
+반응형 웹패턴 4가지 경우를 구현하세요 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>7월13일 과제6-2</title>
+    <!-- 데스크톱에서 메뉴 오른쪽
+    모바일에서 메뉴 위쪽 -->
+    <!-- viewport:사용자에게 보이는 웹페이지 영역 -->
+    <!-- user-scalable : user가 브라우저 확대축소 가능하게 할것인지 -->
+    <!-- initial-scale : 초기확대비율,  maximum-scale : 최대확대비율-->
+    <meta name="viewport" content="user-scalable=no,
+    initial-scale=1, maximum-scale=1">
+    <style>
+        * {margin: 0; padding: 0;}
+
+        body { width: 960px; margin: 0 auto; overflow: hidden;}
+                    /* 6-1은 float가 left였다. */
+        #menu { width: 260px; float: right; }
+                    /* float right > left */
+        #section {width: 700px; float: left; }
+
+        li { list-style: none; }
+
+        @media screen and (max-width: 767px) {
+            body { width: auto }
+            #menu { width: auto; float: none; }
+            #section { width: auto; float: none; }
+        }
+    </style>
+</head>
+<body>
+    <div id="menu">
+        <ul>
+            <li>메뉴A</li>
+            <li>메뉴B</li>
+            <li>메뉴C</li>
+        </ul>
+    </div>
+    <div id="section">
+        <h1>Lorem ipsum</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam voluptatum perspiciatis animi veniam mollitia molestias cupiditate, magni expedita deleniti recusandae rerum iure labore maiores exercitationem fugit eligendi at, repudiandae nisi.</p>
+    </div>
+</body>
+</html>

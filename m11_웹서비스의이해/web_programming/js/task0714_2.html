@@ -1,0 +1,26 @@
+<!-- for 반복문을 사용하여 1*99 ~ 99*1 에서 가장 큰 수를 출력하세요.p.308 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>for문</title>
+    <script>
+        // 변수 선언
+        var a = -1
+        var b = -1
+            //  초기식 - 조건식 - 종결식
+        for (var i = 0; i <= 99; i++) {
+            a = i*(100-i);
+            if ( b < a) {
+                b = a
+            }
+
+        }
+        // console.log(b)
+        // 아래는 화면출력
+        document.write(b)
+    </script>
+</head>
+<body>
+
+</body>
+</html>

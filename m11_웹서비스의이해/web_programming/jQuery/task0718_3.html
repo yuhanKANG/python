@@ -1,0 +1,38 @@
+<!-- event 연결을 두가지 방법으로 수행하여 작성 및 결과 출력 p.388~390 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- 메서드 체이닝을 사용해 문서객체에 이밴트 여러개 적용하기 -->
+    <!-- 메서드가 객체를 반환하게 되면, 메서드의 반환 값인 객체를 통해
+         또 다른 함수를 호출하는 것.  -->
+
+    <!-- $selector).on(eventName, eventHandler); 형식 -->
+    <title>jqEvent_on</title>
+    <script src = "https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script>
+        $(document).ready(function () {
+            //스타일 변경 및 이벤트 연결
+            $('#box').css({
+                width: 100,
+                height: 100,
+                background: 'orange'
+                // 기본 오렌지
+
+                // 클릭하면 빨강
+            }).on('click', function () {
+                $(this).css('background', 'red');
+                // https://recoveryman.tistory.com/51 mouseenter참조
+                // 마우스 갖다대서 올리면 파랑
+            }).on('mouseenter', function () {
+                $(this).css('background', 'blue');
+                // 올려져있는채로 마우스 밖으로 뺴면 초록. 한번이라도 실행하면 오렌지색 없어짐
+            }).on('mouseleave', function () {
+                $(this).css('background', 'green');
+            });
+        });
+    </script>
+</head>
+<body>
+    <div id="box"></div>
+</body>
+</html>

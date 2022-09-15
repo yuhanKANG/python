@@ -1,0 +1,25 @@
+<!-- 343p 코드10-7 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>DOM Basic</title>
+    <script>
+        // 이벤트 연결
+        window.onload = function() {
+            // 문서 객체 선택                   id에서는  header였음(id = "header")
+            var header = document.querySelector('h1');
+
+            // 문서 객체 조작
+            header.style.color = 'blue' ;
+            header.style.background = 'wheat';
+            // innerHTML : 태그 내부를 의미하는 속성
+            header.innerHTML = 'From JavaScript';
+        };
+    </script>
+</head>
+<body>
+    <h1>Header</h1>
+    <h1>Header</h1>
+    <h1>Header</h1>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!-- while 반복문을 사용하여 유효한(가치있는) 사례를 작성하세요. (p.311)-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>while문으로 재시험 점수 구분하기 (커트라인 70점)</title>
+    <script>
+        // 변수 선언
+        var i = 0;
+        var array = [60, 75, 70, 100, 30, 15, 40, 55, 95];
+
+        while (i < array.length) {
+            if (array[i] < 70) {
+                console.log(array[i] + '점 : 불합격') ;
+            } else {
+                console.log(array[i] + '점 : 합격') ;
+            }      
+
+            // 탈출변수
+            i++;
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

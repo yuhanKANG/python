@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Animate Basic</title>
+    <!-- p.387 코드11-15 -->
+    <!-- 복합 이벤트 연결 메서드 -->
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script>
+        // 이벤트 연결
+        $(document).ready(function(){
+            //이벤트 연결
+            $('h1').hover(function(){
+                //색상 변경
+                $(this).css({
+                    background: 'red',
+                    color: 'white'
+                });
+            }, function(){
+                //색상 제거
+                $(this).css({
+                    background: '',
+                    color: ''
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <h1>Click</h1>
+</body>
+</html>

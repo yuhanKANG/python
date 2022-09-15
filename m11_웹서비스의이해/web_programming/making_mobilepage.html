@@ -1,0 +1,257 @@
+<!-- 모바일 페이지 제작하기 p.446~460참조 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Vincent Van Gogh</title>
+    <!-- 초기화 -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Roboto, "Helvetica Neue", Arial, sans-serif;
+        }
+
+        a {text-decoration: none;}
+        img {border: 0;}
+        li {list-style: none;}
+    </style>
+
+    <!-- 공통 구성 -->
+    <style>
+        .container {
+            margin-left: auto;
+            margin-right: auto;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+    </style>
+
+    <!-- 헤더 구성 -->
+    <style>
+        body {
+            background : wheat;
+        }
+        #main-header {
+            padding: 10px 5px;
+        }
+        #main-header h1 {
+            font-size: 20px;
+            font-weight: normal;
+            line-height: 27px;
+            color: #222;
+        }
+        #main-header ul {
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+        #main-header li {
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        #main-header li a {
+            color: #555;
+        }
+        #main-header li.active a {
+            color: black;
+            font-weight: 500;
+        }
+        #main-header label {
+            text-align: center;
+            float: right;
+            width: 40px;
+            height: 27px;
+            line-height: 27px;
+            color: #222;
+            border: 1px solid #222;
+            border-radius: 5px
+        }
+
+        #checkbox {
+            display: none;
+        }
+        /* checkbox 아이디를 가지고 있는 태그 다음에 나타나는 nav 선택 */
+        #checkbox + nav {
+            display: block;
+        }
+        #checkbox:checked + nav {
+            display: none;
+        }
+    </style>
+
+    <!-- 본문과 푸터 구성 -->
+    <style>
+        #main-content {
+            background: #12abda;
+            padding: 40px 15px 30px;
+            margin-top: 30px;
+        }
+        #main-content h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: hsl(221, 88%, 56%);
+            font-weight: 500;
+        }
+        #main-content p {
+            color: #222;
+            text-align: center;
+            color: white;
+        }
+
+        #sub-content {
+            padding-top: 30px;
+        }
+        #sub-content h1 {
+            text-align: center;
+            color: #333;
+        }
+        #sub-content h2 {
+            text-align: center;
+            color: #333;
+            font-size: 17px;
+        }
+        #sub-content p {
+            color: #555;
+        }
+        #sub-content img {
+            width: 200px;
+            display: block;
+            margin: 10px auto;
+        }
+
+        #main-footer {
+            padding-top: 40px;
+        }
+
+        footer {
+            background: #323232;
+            color: yellow;
+            font-size: 12px;
+            text-align: center;
+            line-height: 40px;
+        }
+        /* 임시 */
+        /* .h2 {
+            color: sienna;
+        } */
+        header {
+            position: fixed;
+            top: 10px;
+            /* width: 100% */
+            left: 0;
+            right: 0;
+        }
+    </style>
+    <!-- <style>
+        반응형웹 패턴주기(pc왼쪽, 모바일 위)
+        * {margin: 0; padding: 0;}
+        body { width: 960px; margin: 0 auto;}
+        #menu { width: 260px; float: left; }
+        #section {width: 700px; float: right; }
+        li { list-style: none; }
+
+        @media screen and (max-width: 767px) {
+            body { width: auto }
+            #menu { width: auto; float: none; }
+            #section { width: auto; float: none; }
+            }
+        반응형 웹도 구현하고 싶었지만 출력이 안되는 이유를 못찾아서 보류
+    </style> -->
+</head>
+<body>
+    <div id="main-header">
+        <header class="container">
+            <div>
+                <label for="checkbox">▼</label>
+                <h1>후기인상주의</h1>
+            </div>
+            <input id="checkbox" checked="checked" type="checkbox">
+            <nav>
+                <ul>
+                    <!-- 바로 아랫줄 링크는 자기 자신링크 -->
+                    <li class="active"><a href="C:\cakd7\m11_웹서비스의이해\web_programming\making_mobilepage.html">빈센트 반 고흐</a></li>
+                    <li><a href="#">폴 고갱</a></li>
+                    <li><a href="#">폴 세간</a></li>
+                    <li><a href="#">파블로 피카소</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+    <div id="main-content">
+        <article class="container">
+            <h1>Vincent van gogh</h1>
+            <br>
+            <p> 네덜란드의 화가로서 일반적으로 서양 미술사상 가장 위대한 화가 중 한 사람으로 여겨진다. 자신의 작품 전부(900여 점의 그림들과 1100여 점의 습작들)를 정신질환(측두엽 기능장애로 추측됨)을 앓고 자살을 감행하기 전의 단지 10년 동안에 만들어냈다.
+                <br><br>그는 살아있는 동안 거의 성공을 거두지 못하고 사후에 비로소 알려졌는데, 특히 1901년 3월 17일 파리에서 71점의 그림을 전시한 이후 명성을 얻게 되었다.</p>
+            <p><br><br>
+            그의 대표작을 살펴보자.</p>
+        </article>
+    </div>
+    <div id="sub-content">
+        <article class="container">
+            <h1>해바라기</h1>
+            <h2><물감을 두껍게 칠해 입체적으로 표현></h2>
+            <img src="vincent van gogh/고흐-해바라기1888.jpg">
+            <p> - 해바라기 그림으로 자신의 작업실을 장식하고 친구인 고갱을 맞이하기 위해 그렸다.<br>
+                고흐는 이 해바라기 그림을 그릴 때, 동생 테오에게 아주 멋진 그림이 될 것이라고 들뜬 마음을 편지에 담아 보낼 정도로 마음에 들어 했다고 한다.<br>
+                 - 파리에서 남프랑스 아를의 노란 집으로 이사를 간 고흐는 자신의 작업실을 꾸미기 위해 해바라기 그림을 많이 그렸다. 고흐는 아름다운 곳에서 친구 고갱과 함께 살면서 그림을 그릴 수 있다는 생각에 희망에 가득 찼다. 이 시기는 고흐가 행복감에 젖어 살고 있던 때였다.</p>
+            <br><hr><hr><br>
+            <h1>론강의 별이 빛나는 밤</h1>
+            <h2><혹은 아를의 별이 빛나는 밤></h2>
+            <img src="vincent van gogh/고흐-론강의 별이 빛나는 밤1888.jpg">
+            <p>어떤 기분으로 그렸는지 동생 테오에게 보낸 편지 한 통으로 직접 느껴보세요.</p><br><br>
+            <h3>테오에게</h3><br>
+            <p>나는 지금 아를의 강변에 앉아 있네.</p>
+            <p>욱신거리는 오른쪽 귀에서 강물 소리가 들리네.</p>
+            <p>별들은 알 수 없는 매혹으로 빛나고 있지만</p>
+            <p>저 맑음 속에 얼마나 많은 고통을 숨기고 있는 건지,</p>
+            <p>두 남녀가 술에 취한 듯 비틀거리고 있다네.</p>
+            <p>이 강변에 앉을 때마다 목 빝까지 출렁이는 별빛의 흐름을 느낀다네.</p>
+            <p>나를 꿈꾸게 만든 것은 저 별빛이었을까.</p>
+            <p>별이 빛나는 밤에 캔버스는 초라한 돛단배처럼</p>
+            <p>어딘가로 나를 태워 갈 것 같기도 하네.</p>
+            <p>테오, 내가 계속 그림을 그릴 수 있을까?</p>
+            <p>타라스콩에 가려면 기차를 타야 하듯이</p>
+            <p>별들의 세계로 가기 위해서는 죽음의 관문을 통과해야 한다네.</p>
+            <p>흔들리는 기차에서도 별은 빛나고 있었다네.</p>
+            <p>흔들리듯 가라앉듯 자꾸만 강물 쪽으로 무언가 빨려 들어가고 있네.</p>
+            <p>강변의 가로등, 고통스러운 것들은 저마다 빛을 뿜어내고 있다네.</p>
+            <p>심장처럼 파닥거리는 별빛을 자네에게 보여주고 싶네.</p>
+            <p>나는 노란색의 집으로 가서 숨죽여야 할테지만 별빛은 계속 빛날 것이네.</p>
+            <p>캔버스에서 별빛 터지는 소리가 들리네.</p>
+            <p>테오, 나의 영혼이 물감처럼 하늘로 번져갈 수 있을까</p>
+            <p>트와일라잇 블루, 푸른 대기를 뚫고 별 하나가 또 나오고 있네.</p>
+            <br>
+            <h4><반 고흐가 동생 테오에게 보낸 편지></h4>
+            <br><hr><hr><br>
+            <h1>밤의 카페 테라스</h1>
+            <h2><후기인상주의 작품 대표작 중 하나></h2>
+            <img src="vincent van gogh/고흐-밤의 카페 테라스1888.JPG">
+            <p>늦은 밤, 카페의 아름다운 정경이 마법처럼 펼쳐져 있고,
+                <br>
+                환하게 비추인 카페 지붕의 노란색과 밤하늘의 군청색이 어울려 신비스러운 느낌이 난다.
+                <br>
+                어두운 밤에 더욱 선명해지는 불빛과 강렬한 색감의
+                <br>
+                절묘한 대비가 돋보이는 매혹적이고 환상적인 그림이다.</p>
+            <br><hr><hr><br>
+            <h1>별이 빛나는 밤</h1>
+            <h2><풍경화, 빈센트 반 고흐의 가장 널리 알려진 작품></h2>
+            <img src="vincent van gogh/고흐-별이 빛나는 밤1889.jpg">
+            <p>1889년 생 레미의 정신병원에서 고흐는 정신적 질환으로 인한 고통을 떠올려 그림 속의 소용돌이로 묘사했다.</p>
+            <p>고갱과 다툰 뒤 자신의 귀를 자른 사건 이후 생레미의 요양원에 있을 때 그린 것이다. 그는 병실 밖으로 내다보이는 밤 풍경을 기억과 상상을 결합시켜 그렸는데, 이는 자연에 대한 반 고흐의 내적이고 주관적인 표현을 구현하고 있다.</p>
+    
+        </article>
+    </div>
+    <br><br><br><hr>
+    <p>출처 :</p>
+    <br>
+    <p><a href="https://ko.wikipedia.org/wiki/%EB%B9%88%EC%84%BC%ED%8A%B8_%EB%B0%98_%EA%B3%A0%ED%9D%90">위키피디아, </a>
+        <a href="https://m.blog.naver.com/PostView.naver?isHttpsRedirect=true&blogId=foxray03&logNo=100112240595">네이버 블로그</a></p>
+    <br>
+    <div id="main-footer">
+        <footer class="container">
+            <div>© 2022. (강유한) all rights reversed.</div>
+        </footer>
+    </div>
+</body>
+</html>

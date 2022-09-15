@@ -1,0 +1,33 @@
+<!-- 후손 선택자와 자손 선택자를 생성하여(p.126,134~140) 스타일을 적용하여
+    구현하고 그 차이를 확인하세요. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>7월12일 4번과제</title>
+    <style>
+        #animal h2, #animal dog {color : gray;}
+        /* anilmal의 후손 dog, h2 선택. 후손은 하위내용 전부 */
+        #plant > tree, #plant h4 {color : green}
+        /* plant의 자손 tree 선택. 자손은 직속 */
+    </style>
+</head>
+<body>
+    <div id ="animal">
+        <h2 class="title">동물 종류</h2>
+        <div id="dog">
+        <!-- dog 다른걸로 바꿔도 animal때문에 같은색 나옴 -->
+            <h4>border collie</h4>
+            <!-- plant 자손의 h4가 초록색이기 때문에 일반 검정으로 출력 -->
+        </div><hr>
+    <div id="plant">
+        <h4 class="title">식물 종류</h4>
+        <!-- animal이랑 차이 확인하려고 글자크기 다르게 부여.
+        h4가 plant의 후손이므로 green 적용 -->
+        <div id="tree">
+            <h2>maple</h2>
+            <!-- 위에 plant에서 사용했던 h4는 해당사항이 없어 검정으로 출력됐지만
+            maple에서의 h2은 animal의 후손에 해당되기 때문에 gray 적용 -->
+        </div>
+    </div>
+</body>
+</html>

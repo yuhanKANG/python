@@ -1,0 +1,26 @@
+<!-- 기본 이벤트 제거를 활용한 응용 사례를 생각하여 작성 후 결과 출력 p.391 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- 코드11-18 -->
+    <title>Event Basic</title>
+    <script src = "https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script>
+        // 이벤트 연결
+        $(document).ready(function () {
+            //이벤트 연결
+            $('a').click(function (event) {
+                // 출력
+                alert('존재하지 않는 페이지입니다.');
+
+                // 기본이벤트 제거
+                event.preventDefault();
+            });
+        });
+    </script>
+</head>
+<body>
+    <!-- f1에서 말고 인터넷에서 오픈 -->
+    <a href="http://hanb.co.kr">의문의 홈페이지</a>
+</body>
+</html>

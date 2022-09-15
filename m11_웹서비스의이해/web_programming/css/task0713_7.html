@@ -1,0 +1,97 @@
+<!-- 7월13일 과제7 task0712_1에 css를 추가하여 웹의 완성도를 제고하세요.(응용대환영)-->
+<!-- 7월12일 과제1 종합예제1(p.117)을 기반으로 html 종합문제를 수행하세요(응용) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>7월13일 과제7</title>
+    <style>
+        body {background-color: wheat;}
+        * {margin: 0; padding: 0;}
+
+        body { width: 960px; margin: 20px auto; overflow: scroll;}
+            
+        #relate { width: 240px; float: right; }
+            
+        #section {width: 700px; float: left; }
+
+        li { list-style: none; }
+
+        @media screen and (max-width: 767px) {
+            body { width: auto }
+            #relate { width: auto; float: none; }
+            #section { width: auto; float: none; }
+        }
+
+
+    </style>
+</head>
+<body>
+    <!-- 전체를 감싸는 태그 -->
+    <div id="section">
+        <!-- 헤더 -->
+        <header id="main-header">
+            <hgroup>
+                <h1 class="master-title">조직 행태론</h1><hr>
+            </hgroup>
+        </header>
+        <!-- 네비게이션 -->
+        <nav>
+            <h2>1. 직무</h2><br>
+        </nav>
+        <!-- 본문 -->
+        <div>
+            <!-- 본문 좌측 영역 -->
+            <section id="section">
+                <h3>1-1. 직무 만족</h3>
+                <h4>직무만족은 직무에 관련된 태도 중 하나로, 개인이 직무나 직무경험에 대한 평가의 결과로 얻게 되는 
+                    즐겁고 긍정적인 감정상태를 의미한다.
+                    직무 만족이 클수록 조직 몰입이 강하다.
+                </h4><br>
+                <h3>1-2. 조직 몰입</h3>
+                <h4>조직몰입은 조직에 대해 구성원이 가질 수 있는 동일시, 몰입, 일체감, 애착 등의 사고 방식을 
+                    나타내는 것으로 조직목표의 수용, 조직을 위해 헌신 하려는 마음, 좋지 못한 조건임에도 불구하고 
+                    조직의 구성원 으로 남아 있으려는 의지 등을 의미한다.
+                    조직 몰입이 강할수록 조직에 대한 충성도가 높다.
+                </h4><br>
+                <h3>1-3. 직무 탈진</h3>
+                <h4>업무를 수행하면서 경험하는 스트레스로 심신이 매우 약해지는 상태. 함께 일하는 사람들에 대한 
+                    관심이 없어지고 개인적인 성취감이 감소하며 정서적 소진이나 비인간화 등의 현상을 보인다.
+                    위 현상이 장기화되면 직무 소진으로 이어지기도 한다.
+                </h4><br>
+                <h3>1-4. 직무 소진</h3>
+                <h4>직무소진은 주변 관계 속에서 오랫동안 반복적으로 정서적 압박을 받은 결과 발생하는
+                    신체, 심리, 정신이 메말라 개인에게 부정적 영향을 주는 상태를 말한다.
+                <br>
+                    직무소진 특징은 냉소적 보게 되는 자신의 업무, 대충 마무리하는 업무, 불성실, 잦은 지각과 조퇴,
+                    생산성 감소, 성취감을 저하, 심할 경우엔 이직하기도 한다.
+                </h4><br><br><br><br><br><br>
+            </section>
+        </div>
+    </div>
+    <div>
+        <div id = "relate">
+            <!--  -->
+            <aside id="relate">
+                <ul>
+                    <h2>관련 단어</h2>
+                    <li>직무 요구</li>
+                    <li>정서 노동</li>
+                    <li>직무 자원</li>
+                    <li><a href="https://kras.kosha.or.kr/health/health_tab02">직무 스트레스</a></li>
+                    <li>조직 성과와의 관계</li><br><br><br>
+            </aside>
+        </div>
+        <div id = "relate">
+            <h2>참고자료</h2><br>
+            <a href="http://www.readersnews.com/news/articleView.html?idxno=51876">독서신문, 2014.</a><br>
+            <a href="https://wordrow.kr/%EC%9D%98%EB%AF%B8/%EC%A7%81%EB%AC%B4%20%ED%83%88%EC%A7%84/">wordrow</a><br>
+            <a href="https://ko.wikipedia.org/wiki/%EC%A7%81%EB%AC%B4_%EB%A7%8C%EC%A1%B1">위키피디아</a>
+            <br><br><br>
+        </div>
+        <!-- 푸터 -->
+        <footer id = "section">
+            <h3>ⓒ 2022. (강유한) all rights reversed.</h3>
+        </footer>
+    </div>
+</body>
+</html>
