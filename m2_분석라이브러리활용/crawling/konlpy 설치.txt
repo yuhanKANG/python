@@ -1,0 +1,8 @@
+konlpy 설치(한국어)
+
+1. jdk설치
+2. C > 프로그램파일> 자바 > jre > bin > server
+
+
+
+https://data-scientist-brian-kim.tistory.com/79 참고

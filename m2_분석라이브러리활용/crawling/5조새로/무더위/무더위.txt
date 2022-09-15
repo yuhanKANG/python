@@ -1,0 +1,33 @@
+https://www.data.go.kr/tcs/puc/selectPublicUseCaseView.do?pageIndex=6&prcuseCaseSn=1031898&hbrdSe=&searchCondition1=&searchCondition2=SJCN&cndCtgryEdu=Y&cndCtgryMngtTrt=Y&cndCtgryPblAdmin=Y&cndCtgryFnc=Y&cndCtgryEmplIndst=Y&cndCtgrySocWlf=Y&cndCtgryFdHlth=Y&cndCtgryCulTour=Y&cndCtgryHlthCare=Y&cndCtgryDisSfty=Y&cndCtgryTrnsLgc=Y&cndCtgryEnvWthr=Y&cndCtgrySncTech=Y&cndCtgryAgriFish=Y&cndCtgryUnfc=Y&cndCtgryLaw=Y&bindCndCtgry=OC0001%2COC0002%2COC0003%2COC0004%2COC0005%2COC0006%2COC0007%2COC0008%2COC0009%2COC0010%2COC0011%2COC0012%2COC0013%2COC0014%2COC0015%2COC0016&sort-post=SJCN&searchKeyword1=&bg_radio_off_on=on
+'잠금화면 날씨'는 잠금화면 위젯을 꾸미고, 잠금화면 내에서 현재 위치의 날씨 정보를 제공하는 모바일앱입니다.
+
+
+해수욕장&cctv
+
+
+https://www.data.go.kr/tcs/puc/selectPublicUseCaseView.do?pageIndex=1&prcuseCaseSn=1025027&hbrdSe=&searchCondition1=&searchCondition2=SJCN&cndCtgryEdu=Y&cndCtgryMngtTrt=Y&cndCtgryPblAdmin=Y&cndCtgryFnc=Y&cndCtgryEmplIndst=Y&cndCtgrySocWlf=Y&cndCtgryFdHlth=Y&cndCtgryCulTour=Y&cndCtgryHlthCare=Y&cndCtgryDisSfty=Y&cndCtgryTrnsLgc=Y&cndCtgryEnvWthr=Y&cndCtgrySncTech=Y&cndCtgryAgriFish=Y&cndCtgryUnfc=Y&cndCtgryLaw=Y&bindCndCtgry=OC0001%2COC0002%2COC0003%2COC0004%2COC0005%2COC0006%2COC0007%2COC0008%2COC0009%2COC0010%2COC0011%2COC0012%2COC0013%2COC0014%2COC0015%2COC0016&sort-post=SJCN&searchKeyword1=%EC%95%84%EA%B8%B0%EC%9D%98&bg_radio_off_on=on
+아기의 하루 - 성장, 수유, 육아, 예방접종, 아기수첩, 백색소음, 자장가
+기능 및 서비스화면
+질병관리청의 오픈 api를 활용하여 성장기록, 체온기록, 생활기록, 예방접종, 건강검진, 다이어리, D-DAY, 백색소음, 자장가 등의 정보를 제공합니다
+
+
+
+https://www.data.go.kr/tcs/puc/selectPublicUseCaseView.do?pageIndex=20&prcuseCaseSn=1023615&hbrdSe=&searchCondition1=&searchCondition2=SJCN&cndCtgryEdu=Y&cndCtgryMngtTrt=Y&cndCtgryPblAdmin=Y&cndCtgryFnc=Y&cndCtgryEmplIndst=Y&cndCtgrySocWlf=Y&cndCtgryFdHlth=Y&cndCtgryCulTour=Y&cndCtgryHlthCare=Y&cndCtgryDisSfty=Y&cndCtgryTrnsLgc=Y&cndCtgryEnvWthr=Y&cndCtgrySncTech=Y&cndCtgryAgriFish=Y&cndCtgryUnfc=Y&cndCtgryLaw=Y&bindCndCtgry=OC0001%2COC0002%2COC0003%2COC0004%2COC0005%2COC0006%2COC0007%2COC0008%2COC0009%2COC0010%2COC0011%2COC0012%2COC0013%2COC0014%2COC0015%2COC0016&sort-post=SJCN&searchKeyword1=&bg_radio_off_on=on
+서비스 설명
+'생수병'은 먹는 샘물의 수질 정보를 제공하는 모바일 앱입니다.
+
+기능 및 서비스화면
+환경부 국립환경과학원의 오픈 API를 활용하여 국내 유통되는 먹는 샘물의 수질 검사 결과를 생수병 종류별로 제공합니다
+
+최근 무라벨 생수가 많아짐
+백산수처럼 수원지가 중국산 물의 경우 기피하기도함 
+그래서 수원지를 검색하면?(혹은 생수검색하면??) 생수정보를 찾을수 있도록
+https://news.v.daum.net/v/20190918060016496
+https://story.kakao.com/_JIdBU0/DXFeASOJl3A
+
+
+무더위쉼터(유력후보)
+
+행안부사이트 생활안전지도
+질병관리청
+폭염사망자 4배 기사
