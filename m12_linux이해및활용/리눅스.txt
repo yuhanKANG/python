@@ -1,0 +1,64 @@
+파워셸 우분투2
+wsl --set-version Ubuntu-20.04 2
+
+
+리눅스에서 가장 흔하게 사용하는 셀 /bin /bash
+
+/ : 최상위 디렉토리. 파티션 설정시 반드시 존재해야함
+
+/usr : 절대경로
+
+ls - 현재 위치 파일목록조회
+cd - 디렉터리 이동
+cd ~ 최상위 디렉토리로
+cd . 현재디렉토리
+cd .. 상위디렉토리로
+cwd
+
+ls -la :숨김파일, 권한까지 싹 다나옴(-a가 숨긴것까지)
+touch 파일(확장자까지)  파일만들기
+mkdir -m 777 text4.txt     
+>> 모든권한 텍스트만들기
+cp test1.txt dirtest     test1.txt를 dirtest에 복사
+cp test.txt test1.txt dirtest1     텍스트문서 2개 복사
+ls dirtest1 (확인)
+
+cp -r dirtest1 dirtest2    디렉토리 통째로 복사
+ls dirtest2 
+---------
+mv : 파일이나 디렉토리를 옮길때 씀
+mv 파일1 파일2 : 파일1을 2로바꿈
+mv vkdlf1 vkdlf2 디렉1 : 디렉1로 파일두개 옮김
+
+rm 삭제
+rm -f 강제삭제
+rm -r 디렉 : 디렉토리삭제
+
+cat 파일 : 파일의 내용을 출력
+
+탐색기
+vim test.txt
+i입력 : insert
+
+> : 내용을 바꿈
+>> : 덧붙임
+
+shift + :  wq엔터
+
+tar로 압축
+tar -cvf dir1.tar dirtest1/
+
+tar 압축풀기
+tar -xvf dir1.tar
+
+
+
+
+
+
+
+chmod 777 파일
+tar -cvf dir.tar 파일
+tar -xvf dir.tar
+
+
